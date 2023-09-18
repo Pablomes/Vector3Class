@@ -1,0 +1,109 @@
+START USING
+
+1- DOWNLOAD .ZIP FILE
+2- EXTRACT FOLDER
+3- DRAG FOLDER INTO SAME FOLDER AS THE FILE YOU WANT TO USE IT IN
+4- ADD HEADER INTO .PY FILE from Vector3 import Vector3
+5- USE
+ ___________
+|  VECTOR3  |
+|___________|
+
+Constructor:
+
+      Vector3(x: float, y: float, z; float)
+
+      Creates a new Vector3 object with set components.
+
+Properties:
+
+x               ==> Vector3.x
+                    x component of the vector.
+
+y               ==> Vector3.y
+                    y componet of the vector.
+
+z               ==> Vector3.z
+                    z component of the vector.
+
+Methods:
+
+zero            ==> Vector.zero() -> Vector3
+                    Returns a null vector (0, 0, 0).
+
+one             ==> Vector3.one() -> Vector3
+                    Returns a one vector (1, 1, 1).
+
+set_params      ==> vector.set_params(x: float, y: float, z: float)
+                    Sets the components of the vector to those passed as parameters.
+
+mod             ==> Vector3.mod(vector: Vector3) -> float  OR  vector.mod() -> float
+                    Returns the modulus/length of the vector. Can be used both from the vector whose length is to be found or as a class call, passing a vector as a parameter.
+
+sqr_mod         ==> Vector3.sqr_mod(vector: Vector3) -> float  OR  vector.sqr_mod() -> float
+                    Returns the square modulus/length of the vector. Can be used both from the vector whose square length is to be found or as a class call, passing a vector as a parameter.
+
+normalise       ==> Vector3.normalise(vector: Vector3) -> Vector3  OR  vector.normalise() -> Vector3
+                    Calculates the unitary vector whose direction matches the vector's. Sets it as the new vector's value and returns it. Can be used both from the vector whose unitary vector 
+                    is to be set or as a class call, passing a vector as a parameter.
+
+set_length      ==> Vector3.set_length(vector: Vector3, length: float) -> Vector3  OR  vector.set_length(length: float) -> Vector3
+                    Calculates a vector in the same direction but with length equal to that passed as a parameter. Both sets it as the new value for the vector and returns it. Can be used both 
+                    from the vector to be modified or as a class call, passing a vector as the first parameter.
+
+clamp_mod       ==> Vector3.clamp_mod(vector: Vector3, max_length: float) -> Vector3  OR  vector.clamp_mod(max_length: float) -> Vector3
+                    In the case the vector is longer than the max_length passed as parameter, clamps it to fit it. Both sets it as the new value for the vector and returns it. Can be used both 
+                    from the vector to be modified or as a class call, passing a vector as the first parameter.
+
+distance        ==> Vector3.distance(vector1: Vector3, vector2: Vector3) -> float
+                    Returns the distance between the points described by the vectors from the origin.
+
+comp_mult       ==> Vector3.comp_mult(vector1: Vector3, vector2: Vector3) -> Vector3
+                    Returns a vector whose components are the result of the component-wise operation of vector1 and vector2.
+
+dot             ==> Vector3.dot(vector1: Vector3, vector2: Vector3) -> float
+                    Returns the dot product of the two vectors. vector1 · vector2.
+
+cross           ==> Vector3.cross(vector1: Vector3, vector2: Vector3) -> Vector3
+                    Returns the cross product of the two vectors. vector1 x vector2.
+
+mixed           ==> Vector3.mixed(vector1: Vector3, vector2: Vector3, vector3: Vector3) -> float
+                    Returns the result of the mixed product of the three vectors. vector1 · (vector2 x vector3).
+
+triple_cross    ==> Vector3.triple_cross(vector1: Vector3, vector2: Vector3, vector3: Vector3) -> Vector3
+                    Returns the result of the triple cross product of the three vectors. vector1 x (vector2 x vector3).
+
+angle           ==> Vector3.angle(vector1: Vector3, vector2: Vector3) -> float
+                    Returns the angle from vector1 to vector2 in radians.
+
+angle_deg       ==> Vector3.angle_deg(vector1: Vector3, vector2: Vector3) -> float
+                    Returns the angle from vector1 to vector2 in degrees.
+
+project         ==> Vector3.project(vector, on_vector) -> Vector3
+                    Returns the projection of vector on on_vector.
+
+Operators:
+
+Plus (+)        ==> Vector3 + Vector3 -> Vector3
+                    Returns the addition of the two vectors (component-wise). Can also be used as +=.
+
+Minus (-)       ==> Vector3 - Vector3 -> Vector3
+                    Returns the first vector minus the second one (component-wise). Can also be used as -=.
+
+Mult (*)        ==> Vector3 * float -> Vector3  OR  Vector3 * int -> Vector3
+                    Returns a new vector whose components are the first vector's components multiplied by the scalar. Is NOT commutative. Can also be used as *=.
+
+Real Div (/)    ==> Vector3 / float -> Vector3  OR  Vector3 / int -> Vector3
+                    Returns a new vector whose components are the first vector's components divided by the scalar. Is NOT commutative. Can also be used as /=.
+
+Full Div (//)   ==> Vector3 // float -> Vector3  OR Vector3 // int -> Vector3
+                    Returns a new vector whose components are the first vector's components divided by the scalar ignoring the remainder. Is NOT commutative. Can also be used as //=.
+
+Negation (-)    ==> -Vector3 -> Vector3
+                    Inverts each component of the vector.
+
+Equality (==)   ==> Vector3 == Vector3 -> bool
+                    Returns True if the vectors are the same.
+
+Difference (!=) ==> Vector3 != Vector3 -> bool
+                    Returns True if the vectors are NOT the same.
