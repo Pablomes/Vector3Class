@@ -91,7 +91,7 @@ Minus (-)       ==> Vector3 - Vector3 -> Vector3
                     Returns the first vector minus the second one (component-wise). Can also be used as -=.
 
 Mult (*)        ==> Vector3 * float -> Vector3  OR  Vector3 * int -> Vector3
-                    Returns a new vector whose components are the first vector's components multiplied by the scalar. Is NOT commutative. Can also be used as *=.
+                    Returns a new vector whose components are the first vector's components multiplied by the scalar. Can also be used as *=.
 
 Real Div (/)    ==> Vector3 / float -> Vector3  OR  Vector3 / int -> Vector3
                     Returns a new vector whose components are the first vector's components divided by the scalar. Is NOT commutative. Can also be used as /=.
